@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  tag: latest   # overwritten by Jenkins via --set image.tag=<IMAGE_TAG> and yq bump
+
+ingress:
+  enabled: true
+  className: nginx
+  host: uat.internal.myapp.com
+  # matches Jenkinsfile smoke test: https://<UAT_NAMESPACE>.internal.myapp.com/healthz
