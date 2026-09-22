@@ -2,6 +2,7 @@ replicaCount: 1
 
 image:
   tag: latest   # overwritten by Jenkins via --set image.tag=<IMAGE_TAG> and yq bump
+  pullSecret: ecr-pull-secret   # created per-namespace, see setup-kind.sh
 
 ingress:
   enabled: true
