@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: 123456789.dkr.ecr.ap-south-1.amazonaws.com/myapp
+  repository: 158527855865.dkr.ecr.ap-south-1.amazonaws.com/helm-nginx
   tag: latest
   pullPolicy: IfNotPresent
 
